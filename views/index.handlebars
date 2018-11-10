@@ -1,30 +1,28 @@
 <div class="col-12">
-<h1 class="text-center">Burgers!</h1>
+  <h1 class="text-center">Burgers!</h1>
 </div>
-<div class="col-7">
-<h2>Burgers waiting to be devoured</h2>
-
-<ul>
-  {{#each burgers}}
+<div class="col-7 burgerCol">
+  <h3 class="text-center">Burgers waiting to be devoured</h3>
+  <ul>
+    {{#each burgers}}
     {{#unless devoured}}
-      <li>
-        {{burger_name}}
-        <button class="eat-burger" data-id="{{id}}">Devour it!</button>
-      </li>
+    <li>
+      {{burger_name}}
+      <button class="eat-burger" data-id="{{id}}">Devour it!</button>
+    </li>
     {{/unless}}
-  {{/each}}
-</ul>
+    {{/each}}
+  </ul>
 </div>
-<div class="col-5">
-<h2>Devoured Burgers!</h2>
-
-<ul>
-  {{#each burgers}}
+<div class="col-5 devouredCol">
+  <h3 class="text-center">Devoured Burgers!</h3>
+  <ul>
+    {{#each burgers}}
     {{#if devoured}}
-      <li>
-        {{burger_name}}
-      </li>
+    <li>
+      {{burger_name}}
+    </li>
     {{/if}}
-  {{/each}}
-</ul>
+    {{/each}}
+  </ul>
 </div>

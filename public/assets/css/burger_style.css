@@ -1,8 +1,16 @@
+body {
+ background-color: blanchedalmond
+}
 
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  /* background: #DCFA84; */
+}
+
+.addBurger {
+  background: #ADCDFF;
+  padding: 10px 20px;
 }
 
 .label {
@@ -12,7 +20,7 @@ li {
 .create-form {
   padding: 5px;
   margin: 5px;
-  background: aqua;
+  /* background: aqua; */
 }
 
 .form-group {
